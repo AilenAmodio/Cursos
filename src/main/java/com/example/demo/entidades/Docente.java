@@ -15,6 +15,7 @@ import lombok.Setter;
 @Getter
 @Entity 
 @DiscriminatorValue (value= "DOCENTE")
+
 public class Docente extends Persona implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
