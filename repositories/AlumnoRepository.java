@@ -1,5 +1,7 @@
 package com.example.demo.repositories;
 
+import java.util.Optional;
+
 import javax.transaction.Transactional;
 
 import org.springframework.data.repository.CrudRepository;
@@ -10,4 +12,6 @@ import com.example.demo.entidades.Alumno;
 @Transactional
 public interface AlumnoRepository extends CrudRepository<Alumno, Long> {
 
+	Optional<Alumno> findByNombre(String nombre);
+	Optional<Alumno> findByNombreAndApellido (String nombre, String apellido);
 }
