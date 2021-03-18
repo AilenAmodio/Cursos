@@ -19,11 +19,10 @@ public class DocenteController {
 	
 	@GetMapping("/guardar")
 	public void saveDocente() {
-		repo.save(new Docente("Damian", "Kuc")); 
+		repo.save(new Docente("juancito", "Perez")); 
 	}
 	@GetMapping("/")
 	public void okDocentes() {
-		//repo.save(new Docente("damian", "kuc"));
 		repo.findAll();
 	
 	}

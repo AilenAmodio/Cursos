@@ -18,7 +18,7 @@ public class AlumnoController {
 	@GetMapping("/guardar")
 	public void saveAlumno() {
 		repo.save(new Alumno("Ailen", "Amodio"));
-		repo.save(new Alumno("Marge", "Simpson"));
+		repo.save(new Alumno("juan", "perez"));
 	}
 	@GetMapping("/")
 	public void okAlumno() {
