@@ -14,5 +14,6 @@ public interface CursoRepositorie extends CrudRepository<Curso, Long> {
 	
 	Optional<Curso> findByNombre(String nombre);
 	Optional<Curso> findByNombreAndHora (String nombre, Integer hora);
+	
 
 }
