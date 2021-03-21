@@ -21,14 +21,20 @@ public class Docente extends Persona implements Serializable {
 	
 	private String username;
 	private String password;
+
 	@OneToMany
 	private List <Curso> cursos = new ArrayList <>();
-	
-	
+
+
 	public Docente(String nombre, String apellido) {
 		super(nombre, apellido);
 	}
-	
+
+	public Docente() {
+		// TODO Auto-generated constructor stub
+	}
+
+
 	
 	
 

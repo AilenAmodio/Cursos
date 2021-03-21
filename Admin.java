@@ -18,4 +18,7 @@ public class Admin extends Persona implements Serializable {
 		super(nombre, apellido);
 	}
 	
+	public Admin() {
+		// TODO Auto-generated constructor stub
+}
 }

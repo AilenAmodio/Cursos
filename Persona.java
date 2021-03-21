@@ -22,7 +22,11 @@ public abstract class Persona implements Serializable {
 	private Long id;
 	protected String nombre;
 	protected String apellido;
-	protected int dni;
+	protected Integer dni;
+	
+	public Persona() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	public Persona (String nombre, String apellido) {
 		this.nombre=nombre;

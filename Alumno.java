@@ -19,6 +19,10 @@ public class Alumno extends Persona implements Serializable{
 	
 	private boolean vacante= true;
 	
+	public Alumno() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public Alumno(String nombre, String apellido) {
 		super(nombre, apellido);
 	}

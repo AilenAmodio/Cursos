@@ -24,7 +24,18 @@ public class Curso implements Serializable {
 	@GeneratedValue (strategy =GenerationType.IDENTITY)
 	private Long id; //numero de curso
 	
+	public Curso() {
+		// TODO Auto-generated constructor stub
+	}
 	
+	
+	public Curso(Integer hora, String nombre) {
+		super();
+		this.hora = hora;
+		this.nombre = nombre;
+	}
+
+
 	private Integer hora;
 	protected String nombre;
 	protected Integer fecha; // duracion ¿meses?
@@ -36,5 +47,5 @@ public class Curso implements Serializable {
 	@OneToMany
 	private List<Curso> cursos= new ArrayList<>();
 
-	
+
 }
